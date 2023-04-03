@@ -1,0 +1,144 @@
+/*Reset CSS para tirar todas as margens dos elementos*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 20px;
+}
+
+/*estilização do HEADER-cabeçalho*/
+.cabecalho{
+    background-color: red;
+    display: flex;
+    justify-content: space-between;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+.cabecalho > img{
+    height: 60px;
+}
+.menu{
+    display: flex;
+}
+.menu > li{
+    height: 60px;
+    display: flex;
+    align-items: center;
+}
+.menu > li > a{
+    color: white;
+    text-decoration: none;
+    text-shadow: 2px 2px black;
+    padding-left: 10px;
+    padding-right: 10px;
+    font-weight: 600;
+}
+.menu > li:hover{
+    background-color: darkred;
+}
+.div1{
+    background-image: url(../img/pizza.jpg);
+    height: 500px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-size: cover;
+    background-position: top center;
+    flex-direction: column;
+    box-shadow: 0px 3px 10px darkgreen;
+}
+
+.div1 > h1{
+    color: white;
+    text-shadow: 1px 1px black;
+    margin-bottom: 30px;
+}
+.botao-vazado{
+    border-radius: 5px;
+    border: 2px solid white;
+    text-decoration: none;
+    color: white;
+    padding: 10px;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+.botao-vazado:hover{
+    background-color: white;
+    color: black;
+}
+.h2{
+    color: green;
+    text-align: center;
+}
+.hr{
+    border: 0px solid white;
+    height: 3px;
+    background: rgb(255,255,255);
+    background: linear-gradient(90deg, rgba(255,255,255,1) 10%, rgba(255,0,0,1) 50%, rgba(255,255,255,1) 90%);}
+.p{
+    text-align: center;
+}
+main{
+    max-width: 1300px;
+    text-align: center;
+    margin: 0 auto;
+}
+.sabores{
+    padding: 10px;
+    display: flex;
+    flex-wrap: wrap; 
+}
+.sabor{
+    border-radius: 20px;
+    margin: 20px 20px 20px 20px;
+}
+.p2{
+    text-align: center;
+    background-color: green;
+    color: white;
+    width: 250px;
+    height: 280px;
+    border-radius: 20px;
+    box-shadow: 1px 1px 10px green;
+}
+.p3{
+    align-items: center;
+    margin: 10px 50px;
+    padding: 5px 5px;
+    background-color: yellow;
+    color: black;
+    border-radius: 5px;
+}
+.img{
+    border-radius: 20px 20px 0px 0px;
+    width: 250px;  
+}
+.promocoes{
+    display: flex;
+    overflow: scroll;
+}
+.promocoes::-webkit-scrollbar{
+    display: none;
+}
+.rodape{
+    background-color: red;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    color: 10px;
+}
+a{
+    color: white;
+    text-decoration: none;
+}
+li{
+    list-style-type: none;
+}
+@media (max-widht:600px) {
+    .sabores{
+        flex-direction: column;
+    }
+}
